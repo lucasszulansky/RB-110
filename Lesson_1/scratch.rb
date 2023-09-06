@@ -1,18 +1,3 @@
-number_of_pets = {
-  'dogs' => 2,
-  'cats' => 4,
-  'fish' => 1
-}
-pets = number_of_pets.keys
-counter = 0
+ages = { "Herman" => 32, "Lily" => 30, "Grandpa" => 5843, "Eddie" => 10, "Marilyn" => 22, "Spot" => 237 }
 
-puts number_of_pets.size
-
-loop do
-  break if counter == number_of_pets.size
-  current_pet = pets[counter]
-  current_pet_number = number_of_pets[current_pet]
-  puts "I have #{current_pet_number} #{current_pet}"
-
-  counter += 1
-end
+p ages.values.min
