@@ -1,3 +1,9 @@
-ages = { "Herman" => 32, "Lily" => 30, "Grandpa" => 5843, "Eddie" => 10, "Marilyn" => 22, "Spot" => 237 }
+counter = 0
 
-p ages.values.min
+x = [1,2,3,4,5].map do |n|
+  n * 2 
+  counter += 1
+  break if counter == 2
+end
+
+p x
