@@ -10,13 +10,13 @@ def build_deck(suits, values)
   deck = []
 
   suits.each do |suit|
-    cards_of_a_suit = []
+    all_cards_of_a_suit = []
 
     values.each do |value|
-      cards_of_a_suit << [value, suit]
+      all_cards_of_a_suit << [value, suit]
     end
   
-    deck << cards_of_a_suit
+    deck << all_cards_of_a_suit
   end
 
   deck.flatten(1).shuffle!
@@ -103,5 +103,4 @@ loop do # main game loop
   prompt "Play again? (yes/no)"
   answer = gets.chomp
   break unless answer == 'yes' 
-
 end
